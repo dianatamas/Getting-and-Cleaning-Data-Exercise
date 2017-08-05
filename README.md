@@ -5,6 +5,8 @@ Contains script, CodeBook and initial files for the Getting and Cleaning Data Co
 
 This script does all the transformations needed to construct the demanded tidy dataset.
 
+For it to work, ensure the following:
+
 1. Download the UCI HAR Dataset folder
 2. Set the working directory in the parent folder of the UCI HAR Dataset one
 
