@@ -8,7 +8,7 @@ This script does all the transformations needed to construct the demanded tidy d
 For it to work, ensure the following:
 
 1. Download the UCI HAR Dataset folder
-2. Set the working directory in the parent folder of the UCI HAR Dataset one
+2. In RStudio, set the working directory in the parent folder of UCI HAR Dataset
 
 ### run_analysis function
 This is the main function to call in order to perform the transformations.
