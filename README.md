@@ -25,10 +25,23 @@ resultList <- run_analysis()
 View(resultList$MergedDataSet)
 View(resultList$TidyDataSet)
 ```
+The script does the following:
+- Loads the required datasets and creates the corresponding dataframes
+- Adds columns SUbject and Activity to the train et test sets
+- Merges the 2 sets in the total_set variable
+- From the features dataframe, it extracts only the features which contain either mean or std in the name with a regex pattern
+- The Activity column is trasnformed to Factor and the levels are changed to match the correct activity labels
+- The variables are renamed by applying the renameVar function
+- The final tidy dataset is contructed with the summarise_all() function
+- A list containing both datasets is returned: the resulting dataset in step 4 is called MergedDataSet and the dataset from step 5 is called TidyDataSet
 
 ### renameVar function
 This is a helper function used by run_analysis.
 It modifies the name of a feature as described in the CodeBook.
+- According to the first character of the initial name, we replace it with "Time" if it's "t", or "Freq" if it's "f"
+- We split the initial name by the "-" character and capialize the first letter of each resulting substring
+- We join the strings back together with no space
+- Finally, we delete the ()
 
 **Parameters** : initial name
 
