@@ -9,6 +9,7 @@ For it to work, ensure the following:
 
 1. Download the UCI HAR Dataset folder
 2. In RStudio, set the working directory in the parent folder of UCI HAR Dataset
+3. Ensure you have installed and imported the dplyr library
 
 ### run_analysis function
 This is the main function to call in order to perform the transformations.
